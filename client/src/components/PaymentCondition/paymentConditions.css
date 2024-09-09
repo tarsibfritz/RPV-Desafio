@@ -1,0 +1,65 @@
+.PaymentCondition-form-container {
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+}
+
+/* INPUT */
+.PaymentCondition-form-group {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.PaymentCondition-form-group input,
+.PaymentCondition-form-group textarea {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.PaymentCondition-form-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    color: #999;
+    pointer-events: none;
+}
+
+.PaymentCondition-form-group input:focus,
+.PaymentCondition-form-group textarea:focus {
+    outline: none;
+    border-color: var(--darkBlue-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.PaymentCondition-form-group input:focus + label,
+.PaymentCondition-form-group textarea:focus + label,
+.PaymentCondition-form-group input:not(:placeholder-shown) + label,
+.PaymentCondition-form-group textarea:not(:placeholder-shown) + label {
+    top: -9px;
+    left: 9px;
+    font-size: 0.75rem;
+    padding: 0 5px;
+    color: var(--darkBlue-color);
+    background-color: var(--light-color);
+}
+
+/* BUTTON */
+.PaymentCondition-form-button {
+    color: #fff;
+    padding: 0.3em 1.2em;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--darkBlue-color);
+}
+
+.PaymentCondition-form-button:hover {
+    cursor: pointer;
+    background-color: var(--lightBlue-color);
+}
+

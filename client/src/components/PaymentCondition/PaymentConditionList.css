@@ -1,0 +1,162 @@
+/* Tabela */
+.paymentConditions-table-container {
+  overflow-x: auto;
+  margin: 0 15px;
+}
+
+.paymentConditions-table-content {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em;
+  font-family: var(--main-font);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.183);
+}
+
+/* Cabeçalho da tabela */
+.paymentConditions-table-content thead tr {
+  width: 100%;
+  background-color: var(--dark-color);
+  color: #fff;
+  text-align: left;
+}
+
+.paymentConditions-table-content th,
+.paymentConditions-table-content td {
+  padding: 12px 15px;
+}
+
+.paymentConditions-table-content td {
+  word-break: break-word;
+}
+
+/* Largura das colunas */
+.paymentConditions-table-content .col-id {
+  width: 8%;
+}
+
+.paymentConditions-table-content .col-name {
+  width: 80%;
+}
+
+.paymentConditions-table-content .col-delete,
+.paymentConditions-table-content .col-edit {
+  width: 1%;
+}
+
+/* Estilo para as linhas da tabela */
+.paymentConditions-table-content tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.paymentConditions-table-content tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3; /* striped */
+}
+
+.paymentConditions-table-content tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.paymentConditions-table-content td img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Botões de Editar, Deletar, Salvar e Cancelar */
+.paymentConditions-edit-button,
+.paymentConditions-delete-button,
+.paymentConditions-save-button,
+.paymentConditions-cancel-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.paymentConditions-edit-button img,
+.paymentConditions-save-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.paymentConditions-delete-button img {
+  width: 45px;
+  height: 40px;
+}
+
+.paymentConditions-cancel-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+  .paymentConditions-table-content {
+      font-size: 0.8em;
+  }
+
+  .paymentConditions-table-content th,
+  .paymentConditions-table-content td {
+      padding: 10px 12px;
+  }
+
+  .paymentConditions-table-content td {
+      font-size: 0.85em;
+  }
+
+  .paymentConditions-edit-button img,
+  .paymentConditions-save-button img {
+      width: 18px;
+      height: 18px;
+  }
+
+  .paymentConditions-delete-button img {
+      width: 40px;
+      height: 35px;
+  }
+
+  .paymentConditions-cancel-button img {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .paymentConditions-table-content {
+      font-size: 0.7em;
+  }
+
+  .paymentConditions-table-content th,
+  .paymentConditions-table-content td {
+      padding: 8px 10px;
+  }
+
+  .paymentConditions-table-content td {
+      font-size: 0.8em;
+  }
+
+  .paymentConditions-table-content .col-name {
+      width: 70%;
+  }
+
+  .paymentConditions-edit-button img,
+  .paymentConditions-save-button img {
+      width: 15px;
+      height: 15px;
+  }
+
+  .paymentConditions-delete-button img {
+      width: 36px;
+      height: 36px;
+  }
+
+  .paymentConditions-cancel-button img {
+    width: 16px;
+    height: 16px;
+  }
+}

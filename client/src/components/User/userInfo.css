@@ -1,0 +1,139 @@
+.user-maintenance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 10px auto;
+}
+
+.user-maintenance-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.user-maintenance-top a {
+    position: absolute;
+    left: 0;
+    color: var(--darkBlue-color);
+    font-weight: 800;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.user-maintenance-top h1 {
+    flex-grow: 1;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+.user-maintenance-container .user-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.user-maintenance-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-maintenance-container form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+    width: 100%; 
+    max-width: 400px;
+}
+
+.user-maintenance-container form label input[type="text"],
+.user-maintenance-container form label input[type="password"],
+.user-maintenance-container form label input[type="email"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.user-maintenance-container form .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.user-maintenance-container form .checkbox-container label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.user-maintenance-container form .checkbox-container label input[type="checkbox"] {
+    width: auto;
+}
+
+.user-maintenance-container form button[type="submit"] {
+    padding: 2px 15px;
+    background-color: var(--lightBlue-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.user-maintenance-container form button[type="submit"]:hover {
+    background-color: var(--darkBlue-color);
+}
+
+.user-navigator-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 16px;
+}
+
+.user-navigator-container button {
+    color: #7b7b7b53;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.user-navigator-container button:hover {
+    color: #6666667d;
+}
+
+.user-navigator-arrows {
+    margin: 6px 20px;
+}

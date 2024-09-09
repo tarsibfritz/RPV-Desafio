@@ -1,0 +1,450 @@
+.product-form-container {
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+}
+
+.product-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Input */
+.product-form-group {
+    position: relative;
+    margin-bottom: 1.5em;
+}
+
+.product-form-group input,
+.product-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    resize: none;
+}
+
+.product-form-group label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+}
+
+.product-form-group input:focus,
+.product-form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.product-form-group input:not(:placeholder-shown) + label,
+.product-form-group textarea:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 10px;
+    font-size: 13px;
+    color: var(--darkBlue-color);
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    padding: 0 5px;
+}
+
+/* Image Preview */
+.product-preview-container {
+    width: 100%;
+    height: 300px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product-preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-preview-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.product-preview-placeholder .icon {
+    font-size: 3rem;
+    color: #ccc;
+}
+
+.product-preview-placeholder p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Button */
+.product-form-button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: var(--darkBlue-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    grid-column: span 2;
+}
+
+.product-form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove spinners no Chrome, Safari e Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove spinners no Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+    .product-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-form-button {
+        grid-column: span 1;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .product-form-container {
+        padding: 1.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+    }
+
+    .product-preview-container {
+        height: 200px;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 427px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 90%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 435px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 90%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 90%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 90%;
+    }
+} 
+
+
+@media (max-width: 413px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 80%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 80%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 80%;
+    }
+} 
+
+
+@media (max-width: 409px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 80%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 80%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 80%;
+    }
+} 
+
+
+@media (max-width: 375px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 70%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 70%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 70%;
+    }
+} 
+
+
+@media (max-width: 345px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 70%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 70%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 70%;
+    }
+} 
+
+
+
+@media (max-width: 345px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 65%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 65%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 65%;
+    }
+} 
+
+@media (max-width: 325px) {
+    .product-form-container {
+        padding: 2.5em;
+    }
+
+    .product-form-group input,
+    .product-form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+        width: 60%;
+    }
+
+    .product-form-group label {
+        font-size: 14px;
+        
+    }
+
+    .product-preview-container {
+        height: 300px;
+        width: 60%;
+    }
+
+    .product-preview-placeholder .icon {
+        font-size: 2rem;
+       
+    }
+
+    .product-form-button {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 60%;
+    }
+} 
+
+
+

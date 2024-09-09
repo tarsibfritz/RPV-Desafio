@@ -1,0 +1,8 @@
+DB_HOST=host
+DB_PORT=port
+DB_USER=user
+DB_PASSWORD=password
+DB_NAME=db
+JWT_SECRET=stringSecret
+
+#Tem que criar o banco de dados manual  CREATE DATABASE db_coworking

@@ -1,0 +1,109 @@
+.reservations-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+  
+.reservation-card {
+  width: 30%;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.payment-method,
+.totalValue,
+.product-name,
+.hours-reserved,
+.hourly-rate {
+  margin: 5px 0;
+}
+  
+.products-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 10px 0 0 0;
+}
+  
+.product-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+  margin-right: 20px; 
+}
+
+.id {
+    font-size: 14px;
+    background-color: var(--lightBlue-color);
+    border: 1px solid var(--dark-color);
+    width: 60px;
+    height: auto;
+    color: white;  
+    padding: 10px;
+    border-radius: 90px;
+}
+
+/* Buttons */
+.reservation-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  gap: 10px;
+}
+
+.reservation-buttons button {
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  width: auto;
+  transition: ease 0.2s;
+}
+
+/*.reservation-reopen-button {
+  background-color: #cccccc90;
+} */
+
+.reservation-cancel-button {
+  font-size: 14px;
+  color: #646464;
+  background-color: transparent;
+}
+
+.reservation-reopen-button:hover {
+  cursor: pointer;
+  background-color: #d8d8d8;
+}
+
+.reservation-cancel-button:hover{
+  color: #000;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+  .reservations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+    .reservation-card {
+      width: 100%;  
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+  .reservations-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+    .reservation-card {
+      width: 100%;
+    }
+}

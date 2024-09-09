@@ -1,0 +1,181 @@
+/* Tabela */
+.product-table-container {
+    overflow-x: auto;
+    margin: 0 15px;
+}
+
+.product-table-content {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: var(--main-font);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.183);
+}
+
+/* Cabeçalho da tabela */
+.product-table-content thead tr {
+    background-color: var(--dark-color);
+    color: #fff;
+    text-align: left;
+}
+
+.product-table-content th,
+.product-table-content td {
+    padding: 12px 15px;
+}
+
+.product-table-content td {
+    word-break: break-word;
+}
+
+/* Largura das colunas */
+.product-table-content .col-id {
+    width: 5%;
+}
+
+.product-table-content .col-name {
+    width: 20%;
+}
+
+.product-table-content .col-location {
+    width: 30%;
+}
+
+.product-table-content .col-capacity {
+    width: 10%;
+}
+
+.product-table-content .col-rate {
+    width: 20%;
+}
+
+.product-table-content .col-edit,
+.product-table-content .col-delete {
+    width: 7.5%;
+}
+
+/* Estilo para as linhas da tabela */
+.product-table-content tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.product-table-content tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;  /* striped */
+}
+
+.product-table-content tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-table-content td img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Edit Button */
+.product-edit-button,
+.product-delete-button,
+.product-infos-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-edit-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.product-delete-button img {
+    width: 45px;
+    height: 40px;
+}
+
+.product-infos-button img {
+    width: 25px;
+    height: 24px;
+}
+
+/* Tooltip */
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    white-space: pre-wrap;
+    max-width: 200px;
+    bottom: 45px; 
+    left: 25%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+    .product-table-content {
+        font-size: 0.8em;
+    }
+
+    .product-table-content th,
+    .product-table-content td {
+        padding: 10px 12px;
+    }
+
+    .product-table-content td {
+        font-size: 0.85em;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 480px) {
+    .product-table-content {
+        font-size: 0.7em;
+    }
+
+    .product-table-content th,
+    .product-table-content td {
+        padding: 8px 10px;
+    }
+
+    .product-table-content td {
+        font-size: 0.8em;
+    }
+
+    .product-table-content .col-name {
+        width: 70%;
+    }
+
+    .product-edit-button img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .product-delete-button img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .product-infos-button img {
+        width: 20px;
+        height: 20px;
+    }
+}

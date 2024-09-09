@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root{
+    /* FONTS */
+    --titles-font: "Josefin Sans", sans-serif;
+    --main-font: "Karla", sans-serif;
+
+    /* COLORS */
+    --green-color: #54A621;
+    --red-color: #CC1C1C;
+    --darkBlue-color: #17498F;
+    --lightBlue-color: #2979E6;
+    --gray-color: #D9D9D9;
+    --background-color: #DBDCE4;
+    --dark-color: #2B333E;
+    --light-color: #FCFCFC;
+}

@@ -1,0 +1,243 @@
+/* Estilos gerais */
+.reservation-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.reservation-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.reservation-total-form {
+    position: sticky;
+    top: 70px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.reservation-total-container h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reservation-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.reservation-form-grid h2 {
+    grid-column: span 2;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Form Groups */
+.reservation-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.reservation-form-group label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.reservation-form-group input,
+.reservation-form-group select,
+.reservation-form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+
+.reservation-form-group input:focus,
+.reservation-form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.reservation-form-group.selectProduct {
+    grid-column: span 2;
+}
+
+.selectProductContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.selectProductContent select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+/* Buttons */
+.reservation-product-button,
+.reservation-form-button {
+    background-color: var(--darkBlue-color);
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.reservation-form-button{
+    margin-top: 0;
+}
+
+.reservation-product-button:hover,
+.reservation-form-button:hover {
+    background-color: var(--lightBlue-color);
+}
+
+.reservation-remove-button {
+    border: none;
+    background-color: transparent;
+}
+
+.reservation-remove-button img {
+    width: 23px;
+}
+
+/* Table */
+.reservation-product-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    grid-column: span 2;
+    grid-row: 6;
+}
+
+.reservation-product-table th,
+.reservation-product-table td {
+    padding: 7px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.reservation-product-table th {
+    background-color: #0d3162;
+    color: #fff;
+}
+
+.reservation-product-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.reservation-product-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.col-product {
+    width: 55%;
+}
+  
+.col-value {
+    width: 20%;
+}
+  
+.col-hours {
+    width: 10%;
+}
+  
+.col-remove {
+    width: 5%;
+}
+  
+.col-total {
+    width: 20%; 
+}
+
+/* Media Queries */
+
+/* Tablets e telas menores */
+@media (max-width: 768px) {
+    .reservation-form-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .reservation-form-container,
+    .reservation-total-form {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .reservation-total-form {
+      position: relative;
+      top: initial;
+      width: 100%;
+      margin-top: 20px; 
+    }
+  
+    .reservation-form-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-product {
+        width: 36%;
+    }
+
+    .col-value,
+    .col-total {
+      width: 23%; 
+    }
+
+    .col-hours {
+        width: 3%;
+    }
+
+    .col-remove {
+        width: 1%;
+    }
+}
+  
+/* Smartphones */
+@media (max-width: 480px) {
+    .reservation-form-group input,
+    .reservation-form-group select,
+    .reservation-form-group textarea {
+      font-size: 0.9em;
+    }
+  
+    .reservation-form-button,
+    .reservation-product-button {
+      font-size: 0.9em;
+    }
+  
+    .col-product,
+    .col-value,
+    .col-hours,
+    .col-remove,
+    .col-total {
+      width: auto;
+    }
+}
+
